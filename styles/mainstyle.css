@@ -1,57 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico&display=swap');
 
 
-
-.company-title{
-    font-family: 'Safari';
-    font-size: 1.8rem;
-    color:white;
-}
-.services{
-    height: 2rem;
-    background-color: pink;
-
-}
-
-.responsive-line{
-    height: 2px;
-    background-color: seagreen;
-}
-
-.garlic-image{
-   height: 12rem;
-   width: 15rem;
-}
-
 /* styles for cakes and pasteries page */
 
-.landing-image{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
-     url("https://cdn.pixabay.com/photo/2018/01/04/11/40/food-3060458__340.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:70vh;
+.header{
+    position: relative;
+    
 }
 
+.carousel2{
+    height: 100vh;
+    width: 100%;
+ }
 
-@keyframes animateAll{
+.logo-img{
+    width: 8%;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    /* transform: translate(-50%,-50%); */
+    z-index: 100;
+}
+
+.heading2-title{
+    position: absolute;
+    top: 3rem;
+    left: 13rem;
+    /* transform: translate(-50%,-50%); */
+    z-index: 100;
+    font-size: 3rem;
+    color: yellow;
+    letter-spacing: 2rem;
+    border-bottom: 1px solid black;
+    animation: moveInRight 1s ease-out;
+}
+
+.menu-icon{
+    position: absolute;
+    z-index: 100;
+    top: 4rem;
+    left: 90%;
+    color: white;
+    cursor: pointer;
+
+}
+
+@keyframes moveInRight{
 0%{
-    transform: translateX(10px);
-    color: red;
-    font-size: 1.8rem;
+    opacity: 0;
+    transform: translateX(10rem);
 }
-50%{
-    transform: translateX(-100px);
-    color: green;
-    font-size: 2.8rem;
+
+80%{
+    transform: translateX(-2rem);
 }
+
 100%{
+    opacity: 0;
     transform: translate(0);
-    color: whitesmoke;
-    font-size: 3.5rem;
 }
+
 }
 
 .meet-nikki{
@@ -70,12 +78,6 @@
     font-family: 'Dancing Script', cursive;
     font-weight: bolder;
 }
-
-.carousel2{
-    width : 58rem;
-    height : 25rem;
-    border-radius: 1rem;
- }
 
  .cake-info-section{
     margin: 2% 15% 2% 15%;
@@ -99,6 +101,14 @@
     background-color: burlywood;
 }
 
+.founder-img{
+    width: 80%;
+    height: 80%;
+}
+
+.founder-content{
+    letter-spacing: 4px;
+}
 .card-header{
     color: midnightblue;
     font-size: 2rem;
